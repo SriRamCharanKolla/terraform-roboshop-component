@@ -47,7 +47,7 @@ data "aws_ssm_parameter" "private_subnet_ids" {
 }
 
 data "aws_ssm_parameter" "sg_id" {
-    name = "/${var.project}/${var.environment}/sg_id"
+    name = "/${var.project}/${var.environment}/_sg_id"
 }
 
 data "aws_ssm_parameter" "backend_alb_listener_arn" {
