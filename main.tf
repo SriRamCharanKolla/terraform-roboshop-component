@@ -179,7 +179,7 @@ resource "aws_autoscaling_policy" "main" {
 }
 
 # This depends on target group
-# if frontend frontend-dev.daws88s.online
+# if frontend frontend-dev.aitechapp.fun
 resource "aws_lb_listener_rule" "main" {
   listener_arn = local.alb_listener_arn
   priority     = var.rule_priority
