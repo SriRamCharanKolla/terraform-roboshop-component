@@ -1,22 +1,22 @@
-# data "aws_ami" "openvpn" {
-#   most_recent      = true
-#   owners           = ["679593333241"]
+data "aws_ami" "openvpn" {
+  most_recent      = true
+  owners           = ["679593333241"]
 
-#   filter {
-#     name   = "name"
-#     values = ["OpenVPN Access Server Community Image-8fbe3379-*"]
-#   }
+  filter {
+    name   = "name"
+    values = ["OpenVPN Access Server Community Image-8fbe3379-*"]
+  }
 
-#   filter {
-#     name   = "root-device-type"
-#     values = ["ebs"]
-#   }
+  filter {
+    name   = "root-device-type"
+    values = ["ebs"]
+  }
 
-#   filter {
-#     name   = "virtualization-type"
-#     values = ["hvm"]
-#   }
-# }
+  filter {
+    name   = "virtualization-type"
+    values = ["hvm"]
+  }
+}
 
 data "aws_ami" "joindevops" {
   most_recent      = true

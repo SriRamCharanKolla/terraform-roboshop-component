@@ -16,9 +16,13 @@ variable "app_version" {
 }
 
 variable "rule_priority" {
-    
+    type = number
 }
 
+# variable "domain_name" {
+#   default = "aitechapp.fun"
+# }
+
 variable "domain_name" {
-  default = "aitechapp.fun"
+  default = "ramcharankola.in"
 }
